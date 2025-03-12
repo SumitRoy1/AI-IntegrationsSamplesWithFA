@@ -47,8 +47,8 @@ def normalize_path(path):
     return path
 
 # Load the YAML files
-file1_path = 'c:\\W\\t\\1espt-compare\\manifest-sbi-amd64-non-1espt.yml'
-file2_path = 'c:\\W\\t\\1espt-compare\\manifest-sbi-amd64-1espt.yml'
+file1_path = 'c:\\non-1espt.yml'
+file2_path = 'c:\\1espt.yml'
 
 data1 = load_yaml(file1_path)
 data2 = load_yaml(file2_path)

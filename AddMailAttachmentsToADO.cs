@@ -62,12 +62,9 @@ namespace DevicesBuildWatcherFA
                     return new BadRequestObjectResult($"Invalid work item id: {workItemId}");
                 }
 
-                // User-Assigned Managed Identity (UAMI) Client ID for DevicesBuildWatcherFA in PME
                 string uamiClientId = Constants.uamiClientId;
 
                 // Azure DevOps Organization & Project
-                string adoOrg = "MSFTDEVICES";
-                string adoProject = "Devices";
                 var workItemUrl = $"https://dev.azure.com/{adoOrg}/{adoProject}/_apis/wit/workitems/{workItemId}?api-version=7.1";
 
                 var clientId = Constants.AzureDevOpsClientId;
